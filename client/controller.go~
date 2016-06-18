@@ -1,0 +1,10 @@
+package main
+
+type SignboardController struct {
+	crtChan chan SignboardMessage
+}
+
+func InitController() *SignboardController{
+	contorller := &SignboardController{crtChan : make(*SignboardMessage)}
+	
+}

@@ -1,0 +1,15 @@
+package rpc
+
+import (
+	"net/rpc"
+)
+
+type NotificationRPC struct {
+	client *rpc.Client
+}
+
+const (
+	notificationRPC = "ConnectionRPC"
+	NotificationChangeBoardSetting = "ConnectionRPC.ChangeBoardSetting"
+)
+

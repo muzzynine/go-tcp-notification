@@ -1,0 +1,24 @@
+package main
+
+import (
+	"log"
+)
+
+func main(){
+
+	config := InitConfig()
+	log.Printf("Initialize client config")
+
+	tcpClient := &TCPClient{config : config}
+
+	if err := tcpClient.Connect(); err != nil {
+		log.Fatalf("tcp connect failed")
+		log.Fatal(err)
+		panic(err)
+	}
+
+	sigWatcher := InitSignal()
+	sigWatcher.HandleSignal()
+}
+
+	
