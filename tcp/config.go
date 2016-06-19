@@ -18,12 +18,12 @@ func InitConfig() *Config {
 	return &Config{
 		RcvBufferSize : 1024,
 		WrtBufferSize : 1024,
-		TCPAddr : "192.168.0.8:8010",
-		RPCAddr : "localhost:8002",
+		TCPAddr : ""//tcpaddr,
+		RPCAddr : ""//rpcaddr,
 		HeartbeatLimit : 5,
-		DBAddr : "signboard.cqm2majqgqx4.ap-northeast-1.rds.amazonaws.com:3306",
-		DBUser : "muzzynine",
-		DBPasswd : "su1c1delog1c",
-		DBName : "signboard",
+		DBAddr : "",//dbaddr 
+		DBUser : "",//dbusername
+		DBPasswd : "",//dbpassword
+		DBName : ""//dbname,
 	}
 }
