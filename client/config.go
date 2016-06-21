@@ -16,7 +16,7 @@ func InitConfig() *Config {
 		HeartbeatPeriod : 3,
 		HeartbeatTimeout : 5,
 		HeartbeatLimit : 5,
-		Addr : "localhost:8001",
-		ConnId : "68f0082b-38de-47ae-8464-bc6b2411a8ff",
+		Addr : "", //tcp server addr
+		ConnId : "", //uniq device identifier (registered from admin page)
 	}
 }

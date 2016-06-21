@@ -32,9 +32,8 @@ type DBWrapper struct {
 
 
 func BindDB(addr string, id string, passwd string, dbName string) error{
-	//connect := id+":"+passwd+"@tcp("+addr+")/"+dbName
-	connect := "root:root@tcp(localhost:8889)/signboard"
-	log.Print(connect);
+	connect := id+":"+passwd+"@tcp("+addr+")/"+dbName
+	log.Print("connect to database ("+connect+")");
 	db, err := gorm.Open("mysql", connect)
 	if err != nil {
 		return err
