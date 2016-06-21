@@ -5,7 +5,7 @@
 
 #### 시작하기
 
-이 프로젝트는 go로 작성되었으며 웹서버의 클라이언트 페이지를 위해 npm이 있어야한다.
+이 프로젝트는 go로 작성되었으며 웹서버의 클라이언트 페이지 빌드를 원한다면 npm이 있어야한다.
 
 	go get github.com/muzzynune/go-tcp-notification
 
